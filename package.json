@@ -4,7 +4,7 @@
   "description": "This is the worker for **Lignum Project**.",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js",
+    "start": "node index.js",
     "test": "mocha --recursive test"
   },
   "repository": {

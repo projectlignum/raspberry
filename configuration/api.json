@@ -1,8 +1,8 @@
 {
     "development": {
-        "endpoint": "http://ec2-52-91-113-174.compute-1.amazonaws.com:8888"
+        "endpoint": "http://ec2-52-91-113-174.compute-1.amazonaws.com"
     },
     "production": {
-        "endpoint": "http://ec2-52-91-113-174.compute-1.amazonaws.com:8888"
+        "endpoint": "http://ec2-52-91-113-174.compute-1.amazonaws.com"
     }
 }

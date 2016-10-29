@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/projectlignum/raspberry/issues"
   },
-  "homepage": "https://github.com/projectlignum/raspberry#readme"
+  "homepage": "https://github.com/projectlignum/raspberry#readme",
+  "dependencies": {
+    "node-webcam": "^0.3.3",
+    "say": "^0.10.0"
+  }
 }

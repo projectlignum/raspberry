@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-from time import sleep
+from time import time, sleep
 from sys import stdout as out
 
 try:
@@ -16,18 +16,24 @@ try:
 
         GPIO.output(TRIG, False)
 
-        time.sleep(0.000002)
+        sleep(0.000002)
 
         GPIO.output(TRIG, True)
-        time.sleep(0.00001)
+        sleep(0.00001)
         GPIO.output(TRIG, False)
-        time.sleep(0.000002)
+        sleep(0.000002)
 
+        pre_time = time()
         while GPIO.input(ECHO) == 0:
-            pulse_start = time.time()
+            pulse_start = time()
+            if pulse_start - pre_time > 2:
+                pulse_start = -1
+                break
+        if pulse_start == -1:
+            continue
 
         while GPIO.input(ECHO) == 1:
-            pulse_end = time.time()
+            pulse_end = time()
 
         pulse_duration = pulse_end - pulse_start
 

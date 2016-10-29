@@ -1,0 +1,8 @@
+{
+    "development": {
+        "endpoint": "http://ec2-54-209-132-161.compute-1.amazonaws.com:8888"
+    },
+    "production": {
+        "endpoint": "http://ec2-54-209-132-161.compute-1.amazonaws.com:8888"
+    }
+}

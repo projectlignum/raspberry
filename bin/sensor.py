@@ -35,7 +35,7 @@ try:
 
         distance = round(distance, 2)
 
-        if distance > 0 and  distance < 30:
+        if distance > 0 and  distance < 100:
             out.write(str(distance))
             out.flush()
         sleep(3)

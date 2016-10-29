@@ -1,0 +1,21 @@
+{
+  "name": "raspberry",
+  "version": "1.0.0",
+  "description": "This is the worker for **Lignum Project**.",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "test": "mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectlignum/raspberry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projectlignum/raspberry/issues"
+  },
+  "homepage": "https://github.com/projectlignum/raspberry#readme"
+}

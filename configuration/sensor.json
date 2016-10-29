@@ -1,0 +1,8 @@
+{
+    "development": {
+        "filename": "bin/sensor_dev.py"
+    },
+    "production": {
+        "filename": "bin/sensor.py"
+    }
+}
